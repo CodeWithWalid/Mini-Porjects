@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="bmi">
+        <h2>Body Mass Index Calculator</h2>
+        <p class="text"><b>Height in cm</b></p>
+        <input type="text" id="height">
+
+        <p class="text"><b>Weight in kg</b></p>
+        <input type="text" id="weight">
+
+        <p id="result"></p><button id="btn"><b>Calculate</b></button>
+    </div>
+
+    <div class="chart">
+        <table>
+            <thead>
+                <tr>
+                    <th>BMI</th>
+                    <th>Category</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-column="bmi">less than 18.5</td>
+                    <td data-column="catagory">Underweight</td>
+                </tr>
+                <tr>
+                    <td data-column="bmi">between 18.5 and 24.9</td>
+                    <td data-column="catagory">Ideal</td>
+                </tr>
+                <tr>
+                    <td data-column="bmi">between 25 and 29.9</td>
+                    <td data-column="catagory">Overweight</td>
+                </tr>
+                <tr>
+                    <td data-column="bmi">Over 30</td>
+                    <td data-column="catagory">Obesity</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
